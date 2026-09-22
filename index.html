@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="El Pulso, plataforma de noticias de demostración académica.">
+  <title>El Pulso | Noticias con contexto</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Libre+Baskerville:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script type="module" src="js/app.js"></script>
+</head>
+<body>
+  <div class="site-shell">
+    <header class="site-header">
+      <a class="masthead" href="#inicio" aria-label="El Pulso, ir al inicio"><span class="masthead-mark">EP</span><span>El Pulso</span></a>
+      <nav class="main-nav" aria-label="Navegación principal">
+        <a href="#inicio" data-route="inicio">Inicio</a>
+        <a href="#noticias" data-route="noticias">Noticias</a>
+        <a href="#favoritos" data-route="favoritos">Favoritos <span class="nav-count" id="favorite-count">0</span></a>
+        <a href="#contacto" data-route="contacto">Contacto</a>
+        <a class="nav-admin" href="#admin" data-route="admin">Administrar</a>
+      </nav>
+      <button class="menu-toggle" id="menu-toggle" type="button" aria-expanded="false" aria-controls="main-nav">Menú</button>
+    </header>
+
+    <main id="app" tabindex="-1" aria-live="polite"></main>
+
+    <footer class="site-footer">
+      <div><a class="footer-brand" href="#inicio">El Pulso</a><p>Información para entender lo que nos mueve.</p></div>
+      <div><p class="footer-label">Secciones</p><a href="#noticias">Noticias</a><a href="#favoritos">Favoritos</a><a href="#contacto">Contacto</a></div>
+      <div><p class="footer-label">Proyecto académico</p><p>Contenido ficticio para la Entrega 2<br>Desarrollo de Front-end · 2026</p></div>
+    </footer>
+  </div>
+</body>
+</html>

@@ -1,0 +1,46 @@
+[
+  {
+    "id": "ciudades-que-respiran",
+    "category": "Ciudad",
+    "title": "Las ciudades que aprendieron a respirar más lento",
+    "excerpt": "Corredores verdes, transporte limpio y barrios de 15 minutos están cambiando la forma de habitar las capitales.",
+    "content": "Durante los últimos años, varias ciudades latinoamericanas han comenzado a medir su progreso con una pregunta distinta: ¿cuánto tiempo necesita una persona para llegar a lo esencial? La respuesta está transformando calles, parques y rutas de transporte.\n\nLos corredores verdes conectan zonas antes aisladas y ayudan a reducir la temperatura urbana. A la vez, los barrios de proximidad recuperan el comercio local y devuelven tiempo a sus habitantes. No se trata solo de construir más, sino de diseñar mejor los trayectos cotidianos.\n\nEste reportaje es contenido ficticio de demostración para la plataforma El Pulso.",
+    "author": "Mariana Rojas",
+    "date": "2026-09-18",
+    "image": "https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?auto=format&fit=crop&w=1200&q=85",
+    "imageAlt": "Edificios de una ciudad vistos al atardecer"
+  },
+  {
+    "id": "ciencia-del-sueno",
+    "category": "Ciencia",
+    "title": "La ciencia de dormir bien en un mundo encendido",
+    "excerpt": "Nuevas investigaciones explican cómo la luz, las pantallas y los horarios flexibles afectan nuestro descanso.",
+    "content": "Dormir no es poner el cuerpo en pausa: es una actividad biológica compleja que organiza la memoria, el ánimo y la respuesta inmunitaria. Por eso los especialistas recomiendan mirar el descanso como un hábito colectivo y no como una prueba de disciplina individual.\n\nLa luz de la mañana sigue siendo una de las señales más poderosas para sincronizar el reloj interno. Reducir estímulos brillantes antes de dormir y conservar horarios relativamente estables puede ayudar, incluso cuando la rutina laboral cambia.\n\nEste reportaje es contenido ficticio de demostración para la plataforma El Pulso.",
+    "author": "Tomás Vidal",
+    "date": "2026-09-16",
+    "image": "https://images.unsplash.com/photo-1499750310107-5fef28a66643?auto=format&fit=crop&w=1200&q=85",
+    "imageAlt": "Luz suave entrando por una ventana"
+  },
+  {
+    "id": "cocinas-del-pacifico",
+    "category": "Cultura",
+    "title": "Las cocinas del Pacífico cuentan su propia historia",
+    "excerpt": "Ingredientes de río, mar y selva llegan a nuevas mesas sin perder la memoria de sus territorios.",
+    "content": "En las cocinas del Pacífico colombiano cada ingrediente guarda un mapa. El coco recuerda la costa, el viche acompaña los encuentros y las hierbas frescas hablan de patios familiares. Las nuevas generaciones están llevando esos sabores a espacios contemporáneos sin borrar su origen.\n\nEl movimiento también pone sobre la mesa una conversación sobre comercio justo y soberanía alimentaria. Cocinar es celebrar, pero también decidir quién recibe reconocimiento y cómo se protege el territorio.\n\nEste reportaje es contenido ficticio de demostración para la plataforma El Pulso.",
+    "author": "Lucía Mina",
+    "date": "2026-09-13",
+    "image": "https://images.unsplash.com/photo-1515003197210-e0cd71810b5f?auto=format&fit=crop&w=1200&q=85",
+    "imageAlt": "Mesa con ingredientes frescos y platos preparados"
+  },
+  {
+    "id": "energia-del-viento",
+    "category": "Ambiente",
+    "title": "Cuando el viento se convierte en energía local",
+    "excerpt": "Comunidades costeras exploran modelos de energía renovable que combinan tecnología, empleo y participación.",
+    "content": "La transición energética ocurre también en pequeñas decisiones: quién instala, quién administra y quién se beneficia. En comunidades costeras, los proyectos eólicos empiezan a discutirse junto con planes de formación técnica y protección de ecosistemas.\n\nLa conversación más importante no sucede en los folletos, sino en las reuniones comunitarias. Allí se definen las reglas de convivencia entre la infraestructura y la vida cotidiana.\n\nEste reportaje es contenido ficticio de demostración para la plataforma El Pulso.",
+    "author": "Daniel Cárdenas",
+    "date": "2026-09-10",
+    "image": "https://images.unsplash.com/photo-1466611653911-95081537e5b7?auto=format&fit=crop&w=1200&q=85",
+    "imageAlt": "Aerogeneradores en un paisaje abierto"
+  }
+]
