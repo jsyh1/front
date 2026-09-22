@@ -10,7 +10,6 @@
 </head>
 
 <body>
-    <div class="site-shell">
         <header class="site-header"><a class="masthead" href="../inicio/inicio.html"><span
                     class="masthead-mark">EP</span><span>El Pulso</span></a>
             <nav class="main-nav" aria-label="Navegación principal"><a href="../inicio/inicio.html">Inicio</a><a
@@ -63,6 +62,5 @@
     <!-- El detalle comparte la clave de favoritos con la aplicación raíz para conservar la selección. -->
     <script>const favoriteKey = 'el-pulso-favoritos'; const articleId = 'ciudades-que-respiran'; const button = document.querySelector('#save-favorite'); const readFavorites = () => JSON.parse(localStorage.getItem(favoriteKey) || '[]'); const updateButton = () => { const saved = readFavorites().includes(articleId); button.textContent = saved ? '★ Guardada' : '☆ Guardar'; button.classList.toggle('is-favorite', saved); }; button.addEventListener('click', () => { let saved = readFavorites(); saved = saved.includes(articleId) ? saved.filter((id) => id !== articleId) : [...saved, articleId]; localStorage.setItem(favoriteKey, JSON.stringify(saved)); updateButton(); }); updateButton();</script>
 </body>
-+
 
 </html>

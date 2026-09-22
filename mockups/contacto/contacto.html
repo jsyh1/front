@@ -10,7 +10,6 @@
 </head>
 
 <body>
-    <div class="site-shell">
         <header class="site-header"><a class="masthead" href="../inicio/inicio.html"><span
                     class="masthead-mark">EP</span><span>El Pulso</span></a>
             <nav class="main-nav" aria-label="Navegación principal"><a href="../inicio/inicio.html">Inicio</a><a
@@ -60,6 +59,5 @@
     <!-- La validación ocurre en el navegador; no hay backend ni envío de datos externo. -->
     <script>const form = document.querySelector('#contact-form'); form.addEventListener('submit', (event) => { event.preventDefault(); let valid = true; form.querySelectorAll('label').forEach((label) => { const field = label.querySelector('input,textarea'); const error = label.querySelector('.error-message'); error.textContent = ''; if (!field.value.trim()) { error.textContent = 'Este campo es obligatorio.'; valid = false; } else if (field.type === 'email' && !field.validity.valid) { error.textContent = 'Escribe un correo válido.'; valid = false; } }); const status = document.querySelector('#form-status'); status.textContent = valid ? 'Mensaje enviado correctamente. Esta es una demostración local.' : ''; status.className = `form-status ${valid ? 'success-message' : ''}`; if (valid) form.reset(); });</script>
 </body>
-+
 
 </html>
