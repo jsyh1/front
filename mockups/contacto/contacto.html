@@ -1,5 +1,65 @@
 <!doctype html>
 <html lang="es">
-<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="description" content="Formulario de contacto de El Pulso."><title>El Pulso | Contacto</title><link rel="stylesheet" href="../../styles.css"></head>
-<body><div class="site-shell"><header class="site-header"><a class="masthead" href="../inicio/inicio.html"><span class="masthead-mark">EP</span><span>El Pulso</span></a><nav class="main-nav" aria-label="Navegación principal"><a href="../inicio/inicio.html">Inicio</a><a href="../noticias/noticias.html">Noticias</a><a href="../favoritos/favoritos.html">Favoritos</a><a class="active" href="contacto.html">Contacto</a><a class="nav-admin" href="../../index.html#admin">Gestionar noticias</a></nav></header><main><section class="page-heading"><p class="kicker">Hablemos</p><h1>Contacto</h1><p>¿Tienes una historia, una pregunta o un comentario? Este formulario funciona como demostración local.</p></section><section class="contact-layout"><div class="contact-aside"><span class="aside-number">01</span><h2>Tu voz también hace parte de la conversación.</h2><p>El formulario valida los datos en el navegador. No envía información a un servidor.</p></div><form class="contact-form" id="contact-form" novalidate><label>Nombre<input name="name" required autocomplete="name" placeholder="Tu nombre"><small class="error-message"></small></label><label>Correo electrónico<input name="email" type="email" required autocomplete="email" placeholder="nombre@correo.com"><small class="error-message"></small></label><label>Mensaje<textarea name="message" required rows="6" placeholder="Cuéntanos..."></textarea><small class="error-message"></small></label><button class="button button-dark" type="submit">Enviar mensaje <span>→</span></button><p class="form-status" id="form-status" role="status"></p></form></section></main><footer class="site-footer"><div><a class="footer-brand" href="../inicio/inicio.html">El Pulso</a><p>Información para entender lo que nos mueve.</p></div><div><p class="footer-label">Secciones</p><a href="../noticias/noticias.html">Noticias</a><a href="../favoritos/favoritos.html">Favoritos</a><a href="contacto.html">Contacto</a></div><div><p class="footer-label">Proyecto académico</p><p>Contenido ficticio · 2026</p></div></footer></div><script>const form=document.querySelector('#contact-form');form.addEventListener('submit',(event)=>{event.preventDefault();let valid=true;form.querySelectorAll('label').forEach((label)=>{const field=label.querySelector('input,textarea');const error=label.querySelector('.error-message');error.textContent='';if(!field.value.trim()){error.textContent='Este campo es obligatorio.';valid=false;}else if(field.type==='email'&&!field.validity.valid){error.textContent='Escribe un correo válido.';valid=false;}});const status=document.querySelector('#form-status');status.textContent=valid?'Mensaje enviado correctamente. Esta es una demostración local.':'';status.className=`form-status ${valid?'success-message':''}`;if(valid)form.reset();});</script></body>
-+</html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Formulario de contacto de El Pulso.">
+    <title>El Pulso | Contacto</title>
+    <link rel="stylesheet" href="../../styles.css">
+</head>
+
+<body>
+    <div class="site-shell">
+        <header class="site-header"><a class="masthead" href="../inicio/inicio.html"><span
+                    class="masthead-mark">EP</span><span>El Pulso</span></a>
+            <nav class="main-nav" aria-label="Navegación principal"><a href="../inicio/inicio.html">Inicio</a><a
+                    href="../noticias/noticias.html">Noticias</a><a href="../favoritos/favoritos.html">Favoritos</a><a
+                    class="active" href="contacto.html">Contacto</a><a class="nav-admin"
+                    href="../../index.html#admin">Gestionar noticias</a></nav>
+        </header>
+        <!-- Formulario académico: valida en cliente y comunica que no existe backend. -->
+        <main>
+            <section class="page-heading">
+                <p class="kicker">Hablemos</p>
+                <h1>Contacto</h1>
+                <p>¿Tienes una historia, una pregunta o un comentario? Este formulario funciona como demostración local.
+                </p>
+            </section>
+            <section class="contact-layout">
+                <div class="contact-aside"><span class="aside-number">01</span>
+                    <h2>Tu voz también hace parte de la conversación.</h2>
+                    <p>El formulario valida los datos en el navegador. No envía información a un servidor.</p>
+                </div>
+                <form class="contact-form" id="contact-form" novalidate><label>Nombre<input name="name" required
+                            autocomplete="name" placeholder="Tu nombre"><small
+                            class="error-message"></small></label><label>Correo electrónico<input name="email"
+                            type="email" required autocomplete="email" placeholder="nombre@correo.com"><small
+                            class="error-message"></small></label><label>Mensaje<textarea name="message" required
+                            rows="6" placeholder="Cuéntanos..."></textarea><small
+                            class="error-message"></small></label><button class="button button-dark"
+                        type="submit">Enviar mensaje <span>→</span></button>
+                    <p class="form-status" id="form-status" role="status"></p>
+                </form>
+            </section>
+        </main>
+        <footer class="site-footer">
+            <div><a class="footer-brand" href="../inicio/inicio.html">El Pulso</a>
+                <p>Información para entender lo que nos mueve.</p>
+            </div>
+            <div>
+                <p class="footer-label">Secciones</p><a href="../noticias/noticias.html">Noticias</a><a
+                    href="../favoritos/favoritos.html">Favoritos</a><a href="contacto.html">Contacto</a>
+            </div>
+            <div>
+                <p class="footer-label">Proyecto académico</p>
+                <p>Contenido ficticio · 2026</p>
+            </div>
+        </footer>
+    </div>
+    <!-- La validación ocurre en el navegador; no hay backend ni envío de datos externo. -->
+    <script>const form = document.querySelector('#contact-form'); form.addEventListener('submit', (event) => { event.preventDefault(); let valid = true; form.querySelectorAll('label').forEach((label) => { const field = label.querySelector('input,textarea'); const error = label.querySelector('.error-message'); error.textContent = ''; if (!field.value.trim()) { error.textContent = 'Este campo es obligatorio.'; valid = false; } else if (field.type === 'email' && !field.validity.valid) { error.textContent = 'Escribe un correo válido.'; valid = false; } }); const status = document.querySelector('#form-status'); status.textContent = valid ? 'Mensaje enviado correctamente. Esta es una demostración local.' : ''; status.className = `form-status ${valid ? 'success-message' : ''}`; if (valid) form.reset(); });</script>
+</body>
++
+
+</html>

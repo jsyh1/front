@@ -1,5 +1,109 @@
 <!doctype html>
 <html lang="es">
-<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="description" content="Catálogo de noticias de El Pulso."><title>El Pulso | Noticias</title><link rel="stylesheet" href="../../styles.css"></head>
-<body><div class="site-shell"><header class="site-header"><a class="masthead" href="../inicio/inicio.html"><span class="masthead-mark">EP</span><span>El Pulso</span></a><nav class="main-nav" aria-label="Navegación principal"><a href="../inicio/inicio.html">Inicio</a><a class="active" href="noticias.html">Noticias</a><a href="../favoritos/favoritos.html">Favoritos</a><a href="../contacto/contacto.html">Contacto</a><a class="nav-admin" href="../../index.html#admin">Gestionar noticias</a></nav></header><main><section class="page-heading"><p class="kicker">Archivo editorial</p><h1>Todas las noticias</h1><p>Historias de ciudad, ciencia, cultura y ambiente para comprender mejor lo que ocurre a nuestro alrededor.</p></section><section class="section-block catalog-block"><div class="catalog-toolbar"><span>4 historias disponibles</span><a class="read-link" href="../../index.html#noticias">Abrir catálogo interactivo <span>→</span></a></div><div class="news-grid"><article class="news-card"><a class="card-image" href="../detalle/detalle.html"><img src="https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?auto=format&fit=crop&w=1200&q=85" alt="Edificios de una ciudad vistos al atardecer"></a><div class="card-body"><div class="card-meta"><span>Ciudad</span><time datetime="2026-09-18">18 de septiembre de 2026</time></div><h3><a href="../detalle/detalle.html">Las ciudades que aprendieron a respirar más lento</a></h3><p>Corredores verdes, transporte limpio y barrios de 15 minutos están cambiando la forma de habitar las capitales.</p><div class="card-footer"><a class="read-link" href="../detalle/detalle.html">Ver más <span>→</span></a><span class="favorite-button" aria-hidden="true">☆</span></div></div></article><article class="news-card"><a class="card-image" href="../detalle/detalle.html"><img src="https://images.unsplash.com/photo-1499750310107-5fef28a66643?auto=format&fit=crop&w=1200&q=85" alt="Luz suave sobre un escritorio"></a><div class="card-body"><div class="card-meta"><span>Ciencia</span><time datetime="2026-09-16">16 de septiembre de 2026</time></div><h3><a href="../detalle/detalle.html">La ciencia de dormir bien en un mundo encendido</a></h3><p>Nuevas investigaciones explican cómo la luz, las pantallas y los horarios flexibles afectan nuestro descanso.</p><div class="card-footer"><a class="read-link" href="../detalle/detalle.html">Ver más <span>→</span></a><span class="favorite-button" aria-hidden="true">☆</span></div></div></article><article class="news-card"><a class="card-image" href="../detalle/detalle.html"><img src="https://images.unsplash.com/photo-1515003197210-e0cd71810b5f?auto=format&fit=crop&w=1200&q=85" alt="Mesa con ingredientes frescos"></a><div class="card-body"><div class="card-meta"><span>Cultura</span><time datetime="2026-09-13">13 de septiembre de 2026</time></div><h3><a href="../detalle/detalle.html">Las cocinas del Pacífico cuentan su propia historia</a></h3><p>Ingredientes de río, mar y selva llegan a nuevas mesas sin perder la memoria de sus territorios.</p><div class="card-footer"><a class="read-link" href="../detalle/detalle.html">Ver más <span>→</span></a><span class="favorite-button" aria-hidden="true">☆</span></div></div></article><article class="news-card"><a class="card-image" href="../detalle/detalle.html"><img src="https://images.unsplash.com/photo-1466611653911-95081537e5b7?auto=format&fit=crop&w=1200&q=85" alt="Aerogeneradores en un paisaje abierto"></a><div class="card-body"><div class="card-meta"><span>Ambiente</span><time datetime="2026-09-10">10 de septiembre de 2026</time></div><h3><a href="../detalle/detalle.html">Cuando el viento se convierte en energía local</a></h3><p>Comunidades costeras exploran modelos de energía renovable con participación local.</p><div class="card-footer"><a class="read-link" href="../detalle/detalle.html">Ver más <span>→</span></a><span class="favorite-button" aria-hidden="true">☆</span></div></div></article></div></section></main><footer class="site-footer"><div><a class="footer-brand" href="../inicio/inicio.html">El Pulso</a><p>Información para entender lo que nos mueve.</p></div><div><p class="footer-label">Secciones</p><a href="noticias.html">Noticias</a><a href="../favoritos/favoritos.html">Favoritos</a><a href="../contacto/contacto.html">Contacto</a></div><div><p class="footer-label">Proyecto académico</p><p>Contenido ficticio · 2026</p></div></footer></div></body>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Catálogo de noticias de El Pulso.">
+    <title>El Pulso | Noticias</title>
+    <!-- La vista de catálogo comparte estilos con la aplicación principal. -->
+    <link rel="stylesheet" href="../../styles.css">
+</head>
+
+<body>
+    <div class="site-shell">
+        <header class="site-header"><a class="masthead" href="../inicio/inicio.html"><span
+                    class="masthead-mark">EP</span><span>El Pulso</span></a>
+            <nav class="main-nav" aria-label="Navegación principal"><a href="../inicio/inicio.html">Inicio</a><a
+                    class="active" href="noticias.html">Noticias</a><a
+                    href="../favoritos/favoritos.html">Favoritos</a><a href="../contacto/contacto.html">Contacto</a><a
+                    class="nav-admin" href="../../index.html#admin">Gestionar noticias</a></nav>
+        </header>
+        <!-- Catálogo estático para evidencias; el catálogo dinámico completo está en la raíz. -->
+        <main>
+            <section class="page-heading">
+                <p class="kicker">Archivo editorial</p>
+                <h1>Todas las noticias</h1>
+                <p>Historias de ciudad, ciencia, cultura y ambiente para comprender mejor lo que ocurre a nuestro
+                    alrededor.</p>
+            </section>
+            <!-- Cada card presenta imagen, categoría, fecha, resumen y acceso al detalle. -->
+            <section class="section-block catalog-block">
+                <div class="catalog-toolbar"><span>4 historias disponibles</span><a class="read-link"
+                        href="../../index.html#noticias">Abrir catálogo interactivo <span>→</span></a></div>
+                <div class="news-grid">
+                    <article class="news-card"><a class="card-image" href="../detalle/detalle.html"><img
+                                src="https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?auto=format&fit=crop&w=1200&q=85"
+                                alt="Edificios de una ciudad vistos al atardecer"></a>
+                        <div class="card-body">
+                            <div class="card-meta"><span>Ciudad</span><time datetime="2026-09-18">18 de septiembre de
+                                    2026</time></div>
+                            <h3><a href="../detalle/detalle.html">Las ciudades que aprendieron a respirar más lento</a>
+                            </h3>
+                            <p>Corredores verdes, transporte limpio y barrios de 15 minutos están cambiando la forma de
+                                habitar las capitales.</p>
+                            <div class="card-footer"><a class="read-link" href="../detalle/detalle.html">Ver más
+                                    <span>→</span></a><span class="favorite-button" aria-hidden="true">☆</span></div>
+                        </div>
+                    </article>
+                    <article class="news-card"><a class="card-image" href="../detalle/detalle.html"><img
+                                src="https://images.unsplash.com/photo-1499750310107-5fef28a66643?auto=format&fit=crop&w=1200&q=85"
+                                alt="Luz suave sobre un escritorio"></a>
+                        <div class="card-body">
+                            <div class="card-meta"><span>Ciencia</span><time datetime="2026-09-16">16 de septiembre de
+                                    2026</time></div>
+                            <h3><a href="../detalle/detalle.html">La ciencia de dormir bien en un mundo encendido</a>
+                            </h3>
+                            <p>Nuevas investigaciones explican cómo la luz, las pantallas y los horarios flexibles
+                                afectan nuestro descanso.</p>
+                            <div class="card-footer"><a class="read-link" href="../detalle/detalle.html">Ver más
+                                    <span>→</span></a><span class="favorite-button" aria-hidden="true">☆</span></div>
+                        </div>
+                    </article>
+                    <article class="news-card"><a class="card-image" href="../detalle/detalle.html"><img
+                                src="https://images.unsplash.com/photo-1515003197210-e0cd71810b5f?auto=format&fit=crop&w=1200&q=85"
+                                alt="Mesa con ingredientes frescos"></a>
+                        <div class="card-body">
+                            <div class="card-meta"><span>Cultura</span><time datetime="2026-09-13">13 de septiembre de
+                                    2026</time></div>
+                            <h3><a href="../detalle/detalle.html">Las cocinas del Pacífico cuentan su propia
+                                    historia</a></h3>
+                            <p>Ingredientes de río, mar y selva llegan a nuevas mesas sin perder la memoria de sus
+                                territorios.</p>
+                            <div class="card-footer"><a class="read-link" href="../detalle/detalle.html">Ver más
+                                    <span>→</span></a><span class="favorite-button" aria-hidden="true">☆</span></div>
+                        </div>
+                    </article>
+                    <article class="news-card"><a class="card-image" href="../detalle/detalle.html"><img
+                                src="https://images.unsplash.com/photo-1466611653911-95081537e5b7?auto=format&fit=crop&w=1200&q=85"
+                                alt="Aerogeneradores en un paisaje abierto"></a>
+                        <div class="card-body">
+                            <div class="card-meta"><span>Ambiente</span><time datetime="2026-09-10">10 de septiembre de
+                                    2026</time></div>
+                            <h3><a href="../detalle/detalle.html">Cuando el viento se convierte en energía local</a>
+                            </h3>
+                            <p>Comunidades costeras exploran modelos de energía renovable con participación local.</p>
+                            <div class="card-footer"><a class="read-link" href="../detalle/detalle.html">Ver más
+                                    <span>→</span></a><span class="favorite-button" aria-hidden="true">☆</span></div>
+                        </div>
+                    </article>
+                </div>
+            </section>
+        </main>
+        <footer class="site-footer">
+            <div><a class="footer-brand" href="../inicio/inicio.html">El Pulso</a>
+                <p>Información para entender lo que nos mueve.</p>
+            </div>
+            <div>
+                <p class="footer-label">Secciones</p><a href="noticias.html">Noticias</a><a
+                    href="../favoritos/favoritos.html">Favoritos</a><a href="../contacto/contacto.html">Contacto</a>
+            </div>
+            <div>
+                <p class="footer-label">Proyecto académico</p>
+                <p>Contenido ficticio · 2026</p>
+            </div>
+        </footer>
+    </div>
+</body>
+
 </html>

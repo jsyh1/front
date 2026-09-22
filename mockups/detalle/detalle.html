@@ -1,5 +1,68 @@
 <!doctype html>
 <html lang="es">
-<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="description" content="Detalle de una noticia de El Pulso."><title>El Pulso | Detalle de noticia</title><link rel="stylesheet" href="../../styles.css"></head>
-<body><div class="site-shell"><header class="site-header"><a class="masthead" href="../inicio/inicio.html"><span class="masthead-mark">EP</span><span>El Pulso</span></a><nav class="main-nav" aria-label="Navegación principal"><a href="../inicio/inicio.html">Inicio</a><a href="../noticias/noticias.html">Noticias</a><a href="../favoritos/favoritos.html">Favoritos</a><a href="../contacto/contacto.html">Contacto</a><a class="nav-admin" href="../../index.html#admin">Gestionar noticias</a></nav></header><main><article class="article-detail"><a class="back-link" href="../noticias/noticias.html">← Volver a noticias</a><div class="article-header"><div class="card-meta"><span>Ciudad</span><time datetime="2026-09-18">18 de septiembre de 2026</time></div><h1>Las ciudades que aprendieron a respirar más lento</h1><p class="article-deck">Corredores verdes, transporte limpio y barrios de 15 minutos están cambiando la forma de habitar las capitales.</p><div class="article-byline"><span class="author-avatar">M</span><span>Por <strong>Mariana Rojas</strong></span><button class="favorite-button detail-favorite" id="save-favorite" type="button">☆ Guardar</button></div></div><img class="article-image" src="https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?auto=format&fit=crop&w=1200&q=85" alt="Edificios de una ciudad vistos al atardecer"><div class="article-content"><p>Durante los últimos años, varias ciudades latinoamericanas han comenzado a medir su progreso con una pregunta distinta: ¿cuánto tiempo necesita una persona para llegar a lo esencial? La respuesta está transformando calles, parques y rutas de transporte.</p><p>Los corredores verdes conectan zonas antes aisladas y ayudan a reducir la temperatura urbana. A la vez, los barrios de proximidad recuperan el comercio local y devuelven tiempo a sus habitantes. No se trata solo de construir más, sino de diseñar mejor los trayectos cotidianos.</p><p>Este reportaje es contenido ficticio de demostración para la plataforma El Pulso.</p></div></article></main><footer class="site-footer"><div><a class="footer-brand" href="../inicio/inicio.html">El Pulso</a><p>Información para entender lo que nos mueve.</p></div><div><p class="footer-label">Secciones</p><a href="../noticias/noticias.html">Noticias</a><a href="../favoritos/favoritos.html">Favoritos</a><a href="../contacto/contacto.html">Contacto</a></div><div><p class="footer-label">Proyecto académico</p><p>Contenido ficticio · 2026</p></div></footer></div><script>const favoriteKey='el-pulso-favoritos';const articleId='ciudades-que-respiran';const button=document.querySelector('#save-favorite');const readFavorites=()=>JSON.parse(localStorage.getItem(favoriteKey)||'[]');const updateButton=()=>{const saved=readFavorites().includes(articleId);button.textContent=saved?'★ Guardada':'☆ Guardar';button.classList.toggle('is-favorite',saved);};button.addEventListener('click',()=>{let saved=readFavorites();saved=saved.includes(articleId)?saved.filter((id)=>id!==articleId):[...saved,articleId];localStorage.setItem(favoriteKey,JSON.stringify(saved));updateButton();});updateButton();</script></body>
-+</html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Detalle de una noticia de El Pulso.">
+    <title>El Pulso | Detalle de noticia</title>
+    <link rel="stylesheet" href="../../styles.css">
+</head>
+
+<body>
+    <div class="site-shell">
+        <header class="site-header"><a class="masthead" href="../inicio/inicio.html"><span
+                    class="masthead-mark">EP</span><span>El Pulso</span></a>
+            <nav class="main-nav" aria-label="Navegación principal"><a href="../inicio/inicio.html">Inicio</a><a
+                    href="../noticias/noticias.html">Noticias</a><a href="../favoritos/favoritos.html">Favoritos</a><a
+                    href="../contacto/contacto.html">Contacto</a><a class="nav-admin"
+                    href="../../index.html#admin">Gestionar noticias</a></nav>
+        </header>
+        <!-- Artículo completo con metadatos, imagen, contenido y acción de favorito. -->
+        <main>
+            <article class="article-detail"><a class="back-link" href="../noticias/noticias.html">← Volver a
+                    noticias</a>
+                <div class="article-header">
+                    <div class="card-meta"><span>Ciudad</span><time datetime="2026-09-18">18 de septiembre de
+                            2026</time></div>
+                    <h1>Las ciudades que aprendieron a respirar más lento</h1>
+                    <p class="article-deck">Corredores verdes, transporte limpio y barrios de 15 minutos están cambiando
+                        la forma de habitar las capitales.</p>
+                    <div class="article-byline"><span class="author-avatar">M</span><span>Por <strong>Mariana
+                                Rojas</strong></span><button class="favorite-button detail-favorite" id="save-favorite"
+                            type="button">☆ Guardar</button></div>
+                </div><img class="article-image"
+                    src="https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?auto=format&fit=crop&w=1200&q=85"
+                    alt="Edificios de una ciudad vistos al atardecer">
+                <div class="article-content">
+                    <p>Durante los últimos años, varias ciudades latinoamericanas han comenzado a medir su progreso con
+                        una pregunta distinta: ¿cuánto tiempo necesita una persona para llegar a lo esencial? La
+                        respuesta está transformando calles, parques y rutas de transporte.</p>
+                    <p>Los corredores verdes conectan zonas antes aisladas y ayudan a reducir la temperatura urbana. A
+                        la vez, los barrios de proximidad recuperan el comercio local y devuelven tiempo a sus
+                        habitantes. No se trata solo de construir más, sino de diseñar mejor los trayectos cotidianos.
+                    </p>
+                    <p>Este reportaje es contenido ficticio de demostración para la plataforma El Pulso.</p>
+                </div>
+            </article>
+        </main>
+        <footer class="site-footer">
+            <div><a class="footer-brand" href="../inicio/inicio.html">El Pulso</a>
+                <p>Información para entender lo que nos mueve.</p>
+            </div>
+            <div>
+                <p class="footer-label">Secciones</p><a href="../noticias/noticias.html">Noticias</a><a
+                    href="../favoritos/favoritos.html">Favoritos</a><a href="../contacto/contacto.html">Contacto</a>
+            </div>
+            <div>
+                <p class="footer-label">Proyecto académico</p>
+                <p>Contenido ficticio · 2026</p>
+            </div>
+        </footer>
+    </div>
+    <!-- El detalle comparte la clave de favoritos con la aplicación raíz para conservar la selección. -->
+    <script>const favoriteKey = 'el-pulso-favoritos'; const articleId = 'ciudades-que-respiran'; const button = document.querySelector('#save-favorite'); const readFavorites = () => JSON.parse(localStorage.getItem(favoriteKey) || '[]'); const updateButton = () => { const saved = readFavorites().includes(articleId); button.textContent = saved ? '★ Guardada' : '☆ Guardar'; button.classList.toggle('is-favorite', saved); }; button.addEventListener('click', () => { let saved = readFavorites(); saved = saved.includes(articleId) ? saved.filter((id) => id !== articleId) : [...saved, articleId]; localStorage.setItem(favoriteKey, JSON.stringify(saved)); updateButton(); }); updateButton();</script>
+</body>
++
+
+</html>
